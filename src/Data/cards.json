@@ -1,0 +1,31 @@
+{
+  "cards": [
+    {
+      "name": "Student Life Card",
+      "apr": "18.9",
+      "balanceOfferDuration": 0,
+      "purchaseOfferDuration": 6,
+      "credit": 1200,
+      "minIncome": 0,
+      "empStatus": "student"
+    },
+    {
+      "name": "Anywhere Card",
+      "apr": "33.9",
+      "balanceOfferDuration": 0,
+      "purchaseOfferDuration": 0,
+      "credit": 300,
+      "minIncome": 0,
+      "empStatus": null
+    },
+    {
+      "name": "Liquid Card",
+      "apr": "33.9",
+      "balanceOfferDuration": 12,
+      "purchaseOfferDuration": 6,
+      "credit": 3000,
+      "minIncome": 16000,
+      "empStatus": null
+    }
+  ]
+}
