@@ -50,7 +50,7 @@ const Cards = (data) => {
 
   return (
     <>
-      <h2>Availble credit: £{credit}</h2>
+      <h2>Available credit: £{credit}</h2>
       <Styled.Wrapper>{cardsList}</Styled.Wrapper>
     </>
   );
