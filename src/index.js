@@ -1,14 +1,14 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import GloblalStyle from "./Components/Global/CSS";
+import GlobalStyle from "./Components/Global/CSS";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 
 root.render(
   <>
-    <GloblalStyle />
+    <GlobalStyle />
     <App />
   </>
 );
