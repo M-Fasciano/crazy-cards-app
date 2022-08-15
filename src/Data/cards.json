@@ -7,7 +7,8 @@
       "purchaseOfferDuration": 6,
       "credit": 1200,
       "minIncome": 0,
-      "empStatus": "student"
+      "empStatus": "student",
+      "available": false
     },
     {
       "name": "Anywhere Card",
@@ -16,7 +17,8 @@
       "purchaseOfferDuration": 0,
       "credit": 300,
       "minIncome": 0,
-      "empStatus": null
+      "empStatus": null,
+      "available": true
     },
     {
       "name": "Liquid Card",
@@ -25,7 +27,8 @@
       "purchaseOfferDuration": 6,
       "credit": 3000,
       "minIncome": 16000,
-      "empStatus": null
+      "empStatus": null,
+      "available": false
     }
   ]
 }

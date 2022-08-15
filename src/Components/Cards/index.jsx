@@ -58,7 +58,6 @@ const Cards = (data) => {
             onClick={(e) => handleSelectCard(e, idx)}
             data-credit={card.credit}
           >
-            {console.log(selected.indexOf(idx))}
             {selected.indexOf(idx) !== -1 ? "Unselect card" : "Select card"}
           </button>
         </div>
