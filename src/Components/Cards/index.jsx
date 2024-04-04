@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import cards from "../../Data/cards.json";
 import * as Styled from "./styled";
+import { handleSelectCard } from "./helpers";
 
 const Cards = (data) => {
   const [credit, setCredit] = useState(0);
@@ -11,21 +12,6 @@ const Cards = (data) => {
       card.minIncome <= data.income &&
       (card.empStatus == null || card.empStatus === data.empStatus)
   );
-
-  const handleSelectCard = (e, index) => {
-    const creditAvailable = e.target.getAttribute("data-credit");
-    const newCredit = credit + parseInt(creditAvailable);
-    const updatedCredit = credit - parseInt(creditAvailable);
-    const idx = selected.indexOf(index);
-
-    if (selected.indexOf(index) === -1) {
-      setSelected([...selected, index]);
-      setCredit(newCredit);
-    } else if (idx > -1) {
-      selected.splice(idx, 1);
-      setCredit(updatedCredit);
-    }
-  };
 
   const cardsList = cardsData.map((card, idx) => {
     return (
@@ -55,7 +41,9 @@ const Cards = (data) => {
             className={`card__button${
               selected.indexOf(idx) !== -1 ? " active" : ""
             }`}
-            onClick={(e) => handleSelectCard(e, idx)}
+            onClick={(e) =>
+              handleSelectCard(e, idx, credit, selected, setSelected, setCredit)
+            }
             data-credit={card.credit}
           >
             {selected.indexOf(idx) !== -1 ? "Unselect card" : "Select card"}
